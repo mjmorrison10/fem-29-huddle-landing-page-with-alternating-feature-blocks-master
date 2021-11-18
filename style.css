@@ -1,0 +1,167 @@
+:root {
+  /* ### Primary */
+  --color-Pink: hsl(322, 100%, 66%);
+
+  --Pink-hue: 332;
+  --Pink-sat: 100%;
+  --Pink-light: 66%;
+
+  /* ### Neutral */
+  --color-Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --color-Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --color-Grayish-Blue: hsl(208, 11%, 55%);
+
+  --Very-Pale-Cyan-hue: 193;
+  --Very-Pale-Cyan-sat: 100%;
+  --Very-Pale-Cyan-light: 96%;
+
+  --Very-Dark-Cyan-hue: 192;
+  --Very-Dark-Cyan-sat: 100%;
+  --Very-Dark-Cyan-light: 9%;
+
+  --Grayish-Blue-hue: 208;
+  --Grayish-Blue-sat: 11%;
+  --Grayish-Blue-light: 55%;
+
+  font-size: var(--fontSize);
+
+  --fontSize: 18px;
+
+  --fontSize-x9-small: calc(var(--fontSize) * 0.9);
+  --fontSize-x8-small: calc(var(--fontSize) * 0.8);
+  --fontSize-x7-small: calc(var(--fontSize) * 0.7);
+  --fontSize-x6-small: calc(var(--fontSize) * 0.6);
+  --fontSize-x5-small: calc(var(--fontSize) * 0.5);
+  --fontSize-x4-small: calc(var(--fontSize) * 0.4);
+  --fontSize-x3-small: calc(var(--fontSize) * 0.3);
+  --fontSize-x2-small: calc(var(--fontSize) * 0.2);
+
+  --fontSize-x11-large: calc(var(--fontSize) * 1.1);
+  --fontSize-x12-large: calc(var(--fontSize) * 1.2);
+  --fontSize-x13-large: calc(var(--fontSize) * 1.3);
+  --fontSize-x14-large: calc(var(--fontSize) * 1.4);
+  --fontSize-x15-large: calc(var(--fontSize) * 1.5);
+  --fontSize-x16-large: calc(var(--fontSize) * 1.6);
+  --fontSize-x17-large: calc(var(--fontSize) * 1.7);
+  --fontSize-x18-large: calc(var(--fontSize) * 1.8);
+  --fontSize-x19-large: calc(var(--fontSize) * 1.9);
+  --fontSize-x20-large: calc(var(--fontSize) * 2);
+  --fontSize-x25-large: calc(var(--fontSize) * 2.5);
+  --fontSize-x30-large: calc(var(--fontSize) * 3);
+  --fontSize-x35-large: calc(var(--fontSize) * 3.5);
+  --fontSize-x40-large: calc(var(--fontSize) * 4);
+  --fontSize-x45-large: calc(var(--fontSize) * 4.5);
+  --fontSize-x50-large: calc(var(--fontSize) * 5);
+
+  --ff-Open-Sans-body-cta: "Open Sans", sans-serif;
+  --ff-Poppins-heading: "Poppins", sans-serif;
+
+  --fw-Poppins: 600;
+
+  --fw-Open-Sans: 400;
+  --fw-Open-Sans-bold: 700;
+
+  --width: 90%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fontSize);
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Header ///////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-Very-Pale-Cyan);
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: var(--width);
+  padding: 2.5% 0;
+}
+
+.btn {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  color: var(--color-Very-Dark-Cyan);
+  font-family: var(--ff-Open-Sans-body-cta);
+  font-weight: var(--fw-Open-Sans-bold);
+}
+
+.header {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* flex: 1; */
+  width: 50%;
+}
+
+.header-text h1 {
+  font-size: var(--fontSize-x20-large);
+  font-family: var(--ff-Poppins-heading);
+  font-weight: var(--fw-Poppins);
+  max-width: 20ch;
+}
+
+.header-text p {
+  font-family: var(--ff-Open-Sans-body-cta);
+  font-weight: var(--fw-Open-Sans);
+  max-width: 50ch;
+  margin: 2rem 0;
+}
+
+.btn-secondary {
+  background-color: var(--color-Pink);
+  color: white;
+}
+
+.header-img {
+  /* flex: 1; */
+  width: 50%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Footer ///////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+  position: relative;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
